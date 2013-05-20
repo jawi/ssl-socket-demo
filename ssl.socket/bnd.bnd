@@ -1,0 +1,3 @@
+Private-Package: nl.lxtreme.ssl.socket,\
+	nl.lxtreme.ssl.socket.client,\
+	nl.lxtreme.ssl.socket.server
