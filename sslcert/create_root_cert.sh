@@ -2,9 +2,18 @@
 
 rm -f certindex*
 rm -f serial*
-rm -f certs/*
-rm -f private/*
 rm -f *.pem
+
+if [ ! -d private ]; then
+    mkdir private
+else
+    rm -f private/*
+fi
+if [ ! -d certs ]; then
+    mkdir certs
+else
+    rm -f certs/*
+fi
 
 touch certindex.txt
 echo "100001" >serial
