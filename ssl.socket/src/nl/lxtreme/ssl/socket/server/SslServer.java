@@ -35,7 +35,7 @@ public class SslServer implements SslContextProvider {
 
     @Override
     public String getProtocol() {
-        return "SSLv3";
+        return "TLSv1.2";
     }
 
     @Override
