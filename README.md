@@ -24,8 +24,8 @@ production situations!
 1. `cd sslcert`;
 2. run `./create_root_cert.sh` and answer the questions. For common name, use
    something like "Certificate Authority" or anything you like;
-3. run `./export_root_cert_to_keytool.sh` to create the Java keystore with the
-   signing certificate (which is the certificate trusted by both client and
+3. run `./export_root_cert_to_keytool.sh cacert` to create the Java keystore with 
+   the signing certificate (which is the certificate trusted by both client and
    server);
 4. run `./create_signing_request.sh server` to create a signing request for the
    server certificate, and answer all questions. For common name, use the FQDN
